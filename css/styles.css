@@ -283,6 +283,7 @@ img {
   background-color: var(--dark-text-cl);
 }
 .footer-logo {
+  display: block;
   margin-bottom: 16px;
 
   line-height: calc(21 / 18);
