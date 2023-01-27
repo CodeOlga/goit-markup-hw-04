@@ -234,10 +234,6 @@ img {
   border-radius: 4px;
   background-color: var(--light-bg-cl);
 }
-.about-icon {
-  width: 64px;
-  height: 64px;
-}
 .about-item-title {
   margin-bottom: 8px;
 
@@ -316,8 +312,7 @@ img {
   background-color: var(--pressed-state-bg-cl);
 }
 .team-icon {
-  width: 16px;
-  height: 16px;
+  fill: var(--light-bg-cl);
 }
 
 /* Our customers section */
@@ -347,8 +342,6 @@ img {
 }
 .customers-icon {
   fill: var(--subtitle-text-cl);
-  width: 104px;
-  height: 56px;
 }
 .customers-icon:hover {
   fill: var(--pressed-state-bg-cl);
@@ -406,8 +399,6 @@ img {
 }
 .footer-icon {
   fill: var(--light-bg-cl);
-  width: 24px;
-  height: 24px;
 }
 
 /* Portfolio */
@@ -440,7 +431,7 @@ img {
 .projects-list {
   row-gap: 48px;
 }
-.projects-item {
+.project-link {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .projects-item:hover,
