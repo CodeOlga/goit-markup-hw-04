@@ -306,13 +306,14 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: var(--primary-brand-txt-cl);
+  color: var(--light-bg-cl);
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
   background-color: var(--pressed-state-bg-cl);
 }
 .team-icon {
-  fill: var(--light-bg-cl);
+  fill: currentColor;
 }
 
 /* Our customers section */
@@ -334,6 +335,7 @@ img {
   height: 88px;
   border: 1px solid var(--subtitle-text-cl);
   border-radius: 4px;
+  color: var(--subtitle-text-cl);
 }
 .customers-link:hover,
 .customers-link:focus {
@@ -341,7 +343,7 @@ img {
   border: 1px solid var(--pressed-state-bg-cl);
 }
 .customers-icon {
-  fill: var(--subtitle-text-cl);
+  fill: currentColor;
 }
 .customers-icon:hover {
   fill: var(--pressed-state-bg-cl);
@@ -391,6 +393,7 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: var(--light-bg-cl);
   background-color: var(--footer-icons-bg-cl);
 }
 .footer-icon-link:hover,
@@ -398,7 +401,7 @@ img {
   background-color: var(--success-bg-cl);
 }
 .footer-icon {
-  fill: var(--light-bg-cl);
+  fill: currentColor;
 }
 
 /* Portfolio */
