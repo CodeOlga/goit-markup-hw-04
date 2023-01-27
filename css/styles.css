@@ -16,8 +16,9 @@
   --success-bg-cl: #31d0aa;
   --accent-bg-cl: #e7e9fc;
   --light-bg-cl: #f4f4fd;
-  --modal-overlay-bg-cl: #2e2f42;
   --hero-bg-cl: #2e2f42;
+  --modal-overlay-bg-cl: rgba(46, 47, 66, 0.7);
+  --footer-icons-bg-cl: rgba(255, 255, 255, 0.1);
 
   /* Others */
   --indent: 24px;
@@ -127,6 +128,8 @@ img {
 /* Header section */
 .header {
   border-bottom: 1px solid var(--accent-bg-cl);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -175,6 +178,20 @@ img {
 
 /* Hero section */
 .hero {
+  background-image: linear-gradient(
+      var(--modal-overlay-bg-cl),
+      var(--modal-overlay-bg-cl)
+    ),
+    url(../images/hero/people-office.jpg);
+  background-color: var(--hero-bg-cl);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+
   padding-top: 188px;
   padding-bottom: 188px;
 
@@ -185,6 +202,7 @@ img {
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
+
   max-width: 494px;
   font-size: 56px;
   line-height: calc(60 / 56);
@@ -205,6 +223,20 @@ img {
 /* About section */
 .about-list {
   --items: 4;
+}
+.about-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--light-bg-cl);
+}
+.about-icon {
+  width: 64px;
+  height: 64px;
 }
 .about-item-title {
   margin-bottom: 8px;
@@ -263,7 +295,63 @@ img {
   line-height: calc(24 / 20);
 }
 .team-text {
+  margin-bottom: 8px;
   line-height: calc(24 / 16);
+}
+.team-icon-list {
+  display: flex;
+  gap: var(--indent);
+}
+.team-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-brand-txt-cl);
+}
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--pressed-state-bg-cl);
+}
+.team-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Our customers section */
+.customers-title {
+  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+
+  text-align: center;
+}
+.customers-list {
+  display: flex;
+  gap: var(--indent);
+}
+.customers-link {
+  display: block;
+  padding: 16px 32px;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--subtitle-text-cl);
+  border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--pressed-state-bg-cl);
+  border: 1px solid var(--pressed-state-bg-cl);
+}
+.customers-icon {
+  fill: var(--subtitle-text-cl);
+  width: 104px;
+  height: 56px;
+}
+.customers-icon:hover {
+  fill: var(--pressed-state-bg-cl);
 }
 
 /* Footer section */
@@ -271,6 +359,9 @@ img {
   padding-bottom: 100px;
   padding-top: 100px;
   background-color: var(--dark-text-cl);
+}
+.footer-main-container {
+  display: flex;
 }
 .footer-logo {
   display: block;
@@ -286,13 +377,44 @@ img {
   line-height: calc(24 / 16);
   color: var(--accent-bg-cl);
 }
+.footer-container {
+  margin-right: 120px;
+}
+.footer-link-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: var(--white-txt-cl);
+}
+.footer-icon-list {
+  display: flex;
+  gap: 16px;
+}
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--footer-icons-bg-cl);
+}
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+  background-color: var(--success-bg-cl);
+}
+.footer-icon {
+  fill: var(--light-bg-cl);
+  width: 24px;
+  height: 24px;
+}
 
 /* Portfolio */
 /* Projects section  */
 .projects {
   padding-top: 96px;
 }
-
 .filters-list {
   display: flex;
   justify-content: center;
@@ -317,6 +439,16 @@ img {
 }
 .projects-list {
   row-gap: 48px;
+}
+.projects-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projects-item:hover,
+.project-link:hover,
+.project-link:focus {
+  border: 0.5px solid var(--light-bg-cl);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .project-card-content {
   padding-top: 32px;
