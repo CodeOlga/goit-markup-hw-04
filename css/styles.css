@@ -339,14 +339,11 @@ img {
 }
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--pressed-state-bg-cl);
+  color: var(--pressed-state-bg-cl);
   border: 1px solid var(--pressed-state-bg-cl);
 }
 .customers-icon {
   fill: currentColor;
-}
-.customers-icon:hover {
-  fill: var(--pressed-state-bg-cl);
 }
 
 /* Footer section */
@@ -440,7 +437,7 @@ img {
 .projects-item:hover,
 .project-link:hover,
 .project-link:focus {
-  border: 0.5px solid var(--light-bg-cl);
+  /* border: 0.5px solid var(--light-bg-cl); */
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
